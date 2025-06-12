@@ -24,41 +24,51 @@
 \bibitem{linden2003amazon}
 G.~Linden, B.~Smith, and J.~York, ``{Amazon.com} recommendations: Item-to-item
   collaborative filtering,'' \emph{IEEE Internet Computing}, vol.~7, no.~1, pp.
-  76--80, 2003.
+  76--80, Jan. 2003.
 
 \bibitem{shearer2000crisp}
-C.~Shearer, ``The {CRISP}-{DM} model: The new blueprint for data mining,''
+C.~Shearer, ``The {CRISP-DM} model: The new blueprint for data mining,''
   \emph{Journal of Data Warehousing}, vol.~5, no.~4, pp. 13--22, 2000.
 
 \bibitem{sarwar2001item}
 B.~Sarwar, G.~Karypis, J.~Konstan, and J.~Riedl, ``Item-based collaborative
-  filtering recommendation algorithms,'' in \emph{Proceedings of the 10th
-  International Conference on World Wide Web}.\hskip 1em plus 0.5em minus
-  0.4em\relax ACM, 2001, pp. 285--295.
+  filtering recommendation algorithms,'' in \emph{Proc. 10th Int. Conf. World
+  Wide Web}.\hskip 1em plus 0.5em minus 0.4em\relax Hong Kong, China: ACM, May
+  2001, pp. 285--295.
 
 \bibitem{huang2007applying}
-Z.~Huang, D.~X. Zeng, and H.~Chen, ``Analyzing consumer–product graphs:
+Z.~Huang, D.~X. Zeng, and H.~Chen, ``Analyzing consumer-product graphs:
   Empirical findings and applications in recommender systems,''
-  \emph{Management Science}, vol.~53, no.~7, pp. 1146--1164, 2007.
+  \emph{Management Science}, vol.~53, no.~7, pp. 1146--1164, Jul. 2007.
 
 \bibitem{blondel2008fast}
 V.~D. Blondel, J.-L. Guillaume, R.~Lambiotte, and E.~Lefebvre, ``Fast unfolding
   of communities in large networks,'' \emph{Journal of Statistical Mechanics:
-  Theory and Experiment}, vol. 2008, no.~10, p. P10008, 2008.
+  Theory and Experiment}, vol. 2008, no.~10, p. P10008, Oct. 2008.
 
 \bibitem{ricci2011introduction}
 F.~Ricci, L.~Rokach, and B.~Shapira, ``Introduction to recommender systems
-  handbook,'' in \emph{Recommender Systems Handbook}.\hskip 1em plus 0.5em
-  minus 0.4em\relax Boston, MA: Springer, 2011, pp. 1--35.
+  handbook,'' in \emph{Recommender Systems Handbook}, F.~Ricci, L.~Rokach,
+  B.~Shapira, and P.~B. Kantor, Eds.\hskip 1em plus 0.5em minus 0.4em\relax
+  Boston, MA: Springer, 2011, pp. 1--35.
 
 \bibitem{burke2002hybrid}
 R.~Burke, ``Hybrid recommender systems: Survey and experiments,'' \emph{User
-  Modeling and User-Adapted Interaction}, vol.~12, no.~4, pp. 331--370, 2002.
+  Modeling and User-Adapted Interaction}, vol.~12, no.~4, pp. 331--370, Nov.
+  2002.
 
 \bibitem{shokrzadeh2022graph}
 Z.~Shokrzadeh, M.-R. Feizi-Derakhshi, M.-A. Balafar, and
   J.~Bagherzadeh-Mohasefi, ``Graph-based recommendation system enhanced with
-  community detection,'' \emph{arXiv preprint arXiv:2201.03622}, 2022, online;
-  accessed May 2025.
+  community detection,'' \emph{arXiv preprint}, Jan. 2022, arXiv:2201.03622.
+
+\bibitem{repo}
+\BIBentryALTinterwordspacing
+H.~Adipratama, M.~F. Jaisyurrahman, M.~N. Subhan, K.~I. Wijaya, and
+  I.~Ardiansyah, ``Community-aware product recommendation using louvain
+  algorithm on amazon co-purchasing network,'' GitHub repository, 2023.
+  [Online]. Available:
+  \url{https://github.com/hanan-collab/Community-Aware-Product-Recommendation-using-Louvain-Algorithm-on-Amazon-Co-Purchasing-Network}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

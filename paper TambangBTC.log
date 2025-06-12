@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  12 MAY 2025 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.5)  12 JUN 2025 19:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -683,13 +683,19 @@ LaTeX Font Info:    Font shape `OT1/pcr/b/it' in size <10> not available
 LaTeX Font Warning: Font shape `OT1/pcr/m/In' undefined
 (Font)              using `OT1/pcr/m/n' instead on input line 35.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
+Underfull \hbox (badness 1418) in paragraph at lines 96--98
+[]\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---community de-tec-tion, rec-om-me
+n-da-tion sys-
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 110
+.
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 110
+.
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -698,65 +704,82 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-
-LaTeX Warning: Citation `repo' on page 2 undefined on input line 85.
-
-
-Underfull \hbox (badness 4967) in paragraph at lines 85--86
+Underfull \hbox (badness 4967) in paragraph at lines 129--130
 []\OT1/ptm/m/n/10 The im-ple-men-ta-tion of data prepa-ra-tion, com-mu-nity
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 85--86
+Underfull \hbox (badness 6526) in paragraph at lines 129--130
 \OT1/ptm/m/n/10 de-tec-tion, and rec-om-men-da-tion eval-u-a-tion is avail-able
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 \OT1/ptm/m/n/10 at our GitHub repos-i-tory: https://github.com/hanan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 \OT1/ptm/m/n/10 collab/Community-Aware-Product-Recommendation-using-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 \OT1/ptm/m/n/10 Louvain-Algorithm-on-Amazon-Co-Purchasing-Network
  []
 
-[2] [3]
-Underfull \hbox (badness 1448) in paragraph at lines 263--264
+[2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+06.
+ (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 1448) in paragraph at lines 220--221
 []\OT1/ptm/m/n/10 To iden-tify nat-u-ral group-ings of prod-ucts in the co-
  []
 
-<fig/copurchase_graph.png, id=177, 985.0401pt x 714.5094pt>
+[3]
+<fig/copurchase_graph.png, id=147, 985.0401pt x 714.5094pt>
 File: fig/copurchase_graph.png Graphic file (type png)
 <use fig/copurchase_graph.png>
-Package pdftex.def Info: fig/copurchase_graph.png  used on input line 304.
+Package pdftex.def Info: fig/copurchase_graph.png  used on input line 290.
 (pdftex.def)             Requested size: 252.0pt x 182.79167pt.
-[4 <./fig/copurchase_graph.png>]
-Underfull \hbox (badness 1496) in paragraph at lines 383--385
-\OT1/ptm/m/n/10 i-cally con-sis-tent with the seed prod-uct. For ex-am-
+
+Underfull \vbox (badness 1735) has occurred while \output is active []
+
+ [4 <./fig/copurchase_graph.png>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
+[]\OT1/ptm/b/n/10 Different com-mu-ni-ties ex-hib-ited dis-tinct co-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 383--385
-\OT1/ptm/m/n/10 ple, when rec-om-mend-ing for \OT1/ptm/m/it/10 Harley[]Davidson
- Pan-
+Underfull \hbox (badness 3826) in paragraph at lines 376--377
+\OT1/ptm/b/n/10 purchasing pat-terns: \OT1/ptm/m/n/10 Book-dominated com-mu-ni-
+ties
  []
 
-[5] (./paper TambangBTC.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 59--63
+(./paper TambangBTC.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 []\OT1/ptm/m/n/8 Z. Shokrzadeh, M.-R. Feizi-Derakhshi, M.-A. Bal-a-far, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--63
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 \OT1/ptm/m/n/8 J. Bagherzadeh-Mohasefi, ``Graph-based rec-om-men-da-tion sys-te
 m
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 61--64
+\OT1/ptm/m/n/8 en-hanced with com-mu-nity de-tec-tion,'' \OT1/ptm/m/it/8 arXiv 
+preprint\OT1/ptm/m/n/8 , Jan. 2022,
+ []
+
+
+Overfull \hbox (122.23297pt too wide) in paragraph at lines 67--73
+\OT1/ptm/m/n/8 Community-[]Aware-[]Product-[]Recommendation-[]using-[]Louvain-[
+]Algorithm-[]on-[]Amazon-[]Co-[]Purchasing-[]Network$[] 
  []
 
 )
@@ -771,9 +794,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (./paper TambangBTC.aux)
+[6] (./paper TambangBTC.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -783,30 +804,35 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `"paper TambangBTC".out' has not changed.
-(rerunfilecheck)             Checksum: 47CC3793915A58465A96DA47D0BC39C4;3933.
+(rerunfilecheck)             Checksum: 3D6283DD9C3E1DB433AB888FCA881C66;4447.
  ) 
 Here is how much of TeX's memory you used:
- 13793 strings out of 474116
- 210443 string characters out of 5747718
- 2017190 words of memory out of 5000000
- 35817 multiletter control sequences out of 15000+600000
- 601058 words of font info for 124 fonts, out of 8000000 for 9000
+ 13778 strings out of 474116
+ 210366 string characters out of 5747718
+ 1994190 words of memory out of 5000000
+ 35846 multiletter control sequences out of 15000+600000
+ 601073 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,1351b,1613s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texl
-ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2024/texmf-dist/
-fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/
-times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
-<c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/t
-exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "paper TambangBTC.pdf" (6 pages, 537869 bytes).
+ 75i,10n,79p,1199b,1134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/u
+rw/times/utmbi8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "paper TambangBTC.pdf" (6 pages, 589336 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 137 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
