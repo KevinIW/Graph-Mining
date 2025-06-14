@@ -277,9 +277,173 @@ def create_graph(copurchase_df):
 # Cell: Analyze Graph Structure
 import numpy as np
 
-def analyze_graph(G):
-    """Optimized graph analysis with sampling for large graphs"""
+def forest_fire_sampling(G, sample_size, burn_prob=0.3, seed=42):
+    """
+    Implements forest fire sampling to create a representative graph sample
+    that preserves network properties and community structure.
+    
+    Parameters:
+    -----------
+    G : NetworkX graph
+        The input graph to sample from
+    sample_size : int
+        Number of nodes to sample
+    burn_prob : float
+        Probability of the "fire" spreading to neighbors (0.0-1.0)
+    seed : int
+        Random seed for reproducibility
+        
+    Returns:
+    --------
+    list
+        List of sampled node IDs
+    """
     import random
+    random.seed(seed)
+    
+    if sample_size >= len(G):
+        return list(G.nodes())  # Return all nodes if sample size exceeds graph
+    
+    # Start from a random node
+    all_nodes = list(G.nodes())
+    start_node = random.choice(all_nodes)
+    
+    # Keep track of sampled and visited nodes
+    sampled_nodes = set([start_node])
+    to_visit = [start_node]
+    visited = set()
+    
+    while len(to_visit) > 0 and len(sampled_nodes) < sample_size:
+        current = to_visit.pop()
+        visited.add(current)
+        
+        # Get neighbors that haven't been visited yet
+        neighbors = [n for n in G.neighbors(current) if n not in visited]
+        if not neighbors:
+            continue
+            
+        # Randomly sample neighbors based on burn probability
+        # Adjusting the number to burn based on remaining sample quota
+        remaining = sample_size - len(sampled_nodes)
+        to_burn = min(
+            remaining,
+            int(len(neighbors) * burn_prob) + 1  # Ensure at least one burns if possible
+        )
+        burned = random.sample(neighbors, min(to_burn, len(neighbors)))
+        
+        # Add burned neighbors to sample and queue
+        for node in burned:
+            if node not in sampled_nodes:
+                sampled_nodes.add(node)
+                to_visit.append(node)
+                
+                if len(sampled_nodes) >= sample_size:
+                    break
+    
+    # If we don't have enough nodes (happens in disconnected graphs),
+    # add random nodes to reach the desired sample size
+    if len(sampled_nodes) < sample_size:
+        remaining_nodes = list(set(G.nodes()) - sampled_nodes)
+        additional = random.sample(
+            remaining_nodes, 
+            min(sample_size - len(sampled_nodes), len(remaining_nodes))
+        )
+        sampled_nodes.update(additional)
+    
+    return list(sampled_nodes)
+
+def neighbor_sampling(G, sample_size, start_nodes=None, max_neighbors_per_node=10, 
+                     n_hops=2, seed=42):
+    """
+    Implements neighbor sampling, which is optimal for recommendation systems as it directly
+    captures co-purchase relationships by focusing on local neighborhoods.
+    
+    Parameters:
+    -----------
+    G : NetworkX graph
+        The input graph to sample from
+    sample_size : int
+        Maximum number of nodes to sample
+    start_nodes : list or None
+        Starting nodes for sampling. If None, influential nodes will be selected.
+    max_neighbors_per_node : int
+        Maximum number of neighbors to sample for each node
+    n_hops : int
+        Number of hops to explore from start nodes
+    seed : int
+        Random seed for reproducibility
+        
+    Returns:
+    --------
+    list
+        List of sampled node IDs
+    """
+    import random
+    random.seed(seed)
+    
+    if sample_size >= len(G):
+        return list(G.nodes())  # Return all nodes if sample size exceeds graph
+    
+    # If no start nodes provided, use high-degree nodes (influential products)
+    if not start_nodes:
+        degrees = dict(G.degree())
+        start_nodes = [node for node, degree in 
+                      sorted(degrees.items(), key=lambda x: x[1], reverse=True)[:5]]
+    
+    sampled_nodes = set(start_nodes)
+    current_frontier = set(start_nodes)
+    
+    # Perform BFS-like exploration up to n_hops
+    for _ in range(n_hops):
+        next_frontier = set()
+        
+        for node in current_frontier:
+            # Get neighbors not yet sampled
+            neighbors = list(set(G.neighbors(node)) - sampled_nodes)
+            if not neighbors:
+                continue
+                
+            # Sample up to max_neighbors_per_node
+            if len(neighbors) > max_neighbors_per_node:
+                sampled_neighbors = random.sample(neighbors, max_neighbors_per_node)
+            else:
+                sampled_neighbors = neighbors
+                
+            # Add to sampled set and next frontier
+            for neighbor in sampled_neighbors:
+                sampled_nodes.add(neighbor)
+                next_frontier.add(neighbor)
+                
+                # Break if we've reached our sample size
+                if len(sampled_nodes) >= sample_size:
+                    break
+            
+            if len(sampled_nodes) >= sample_size:
+                break
+                
+        # Update frontier for next hop
+        current_frontier = next_frontier
+        
+        if len(sampled_nodes) >= sample_size:
+            break
+    
+    # If we still don't have enough nodes, add high-degree nodes
+    if len(sampled_nodes) < sample_size:
+        degrees = dict(G.degree())
+        candidates = [node for node in G.nodes() if node not in sampled_nodes]
+        candidates.sort(key=lambda x: degrees.get(x, 0), reverse=True)
+        
+        additional = candidates[:min(sample_size - len(sampled_nodes), len(candidates))]
+        sampled_nodes.update(additional)
+    
+    # Return list of sampled nodes, trimming if necessary
+    result = list(sampled_nodes)
+    if len(result) > sample_size:
+        result = result[:sample_size]
+    return result
+
+def analyze_graph(G):
+    """Optimized graph analysis with sampling appropriate for large graphs"""
     
     node_count = G.number_of_nodes()
     results = {
@@ -291,9 +455,10 @@ def analyze_graph(G):
     # For large graphs, sample for clustering coefficient
     if node_count > 10000:
         sample_size = min(1000, node_count)
-        sampled_nodes = random.sample(list(G.nodes()), sample_size)
+        # Use neighbor sampling for better representation of product relationships
+        sampled_nodes = neighbor_sampling(G, sample_size, max_neighbors_per_node=15)
         results['avg_clustering'] = nx.average_clustering(G, nodes=sampled_nodes)
-        print(f"Clustering coefficient calculated on {sample_size} sampled nodes")
+        print(f"Clustering coefficient calculated on {sample_size} nodes using neighbor sampling")
     else:
         results['avg_clustering'] = nx.average_clustering(G)
     
@@ -368,16 +533,15 @@ import matplotlib.pyplot as plt
 
 def visualize_graph(G, partition=None, max_nodes=100, colormap='viridis', edge_alpha=0.3):
     """
-    Enhanced visualization with better colors and sampling of influential nodes
+    Enhanced visualization with neighbor sampling to better show co-purchase relationships
     """
     # Sample nodes if graph is too large
     if G.number_of_nodes() > max_nodes:
-        # Sample the most influential nodes rather than just first N
-        degrees = dict(G.degree())
-        sorted_nodes = sorted(degrees.items(), key=lambda x: x[1], reverse=True)
-        sampled_nodes = [node for node, _ in sorted_nodes[:max_nodes]]
+        # Use neighbor sampling for visualization to better capture purchase relationships
+        # This shows products that are frequently bought together in the visualization
+        sampled_nodes = neighbor_sampling(G, max_nodes, max_neighbors_per_node=8, n_hops=2)
         G_sample = G.subgraph(sampled_nodes)
-        print(f"Visualizing top {max_nodes} nodes by degree centrality")
+        print(f"Visualizing {len(sampled_nodes)} nodes using neighbor sampling")
     else:
         G_sample = G
     
@@ -871,7 +1035,13 @@ def main():
         log_section("RECOMMENDATION EVALUATION")
         print("\nEvaluating recommendation system...")
         sample_size = min(50, len(G.nodes()))
-        test_products = random.sample(list(G.nodes()), sample_size)
+        
+        # For recommendation evaluation, neighbor sampling is ideal as it focuses 
+        # on products that are actually purchased together
+        test_products = neighbor_sampling(G, sample_size, 
+                                        max_neighbors_per_node=10, 
+                                        n_hops=1)
+        print(f"Using neighbor sampling to select {len(test_products)} test products")
         
         try:
             # Evaluate basic recommendations

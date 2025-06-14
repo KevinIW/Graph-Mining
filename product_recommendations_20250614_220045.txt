@@ -1,4 +1,4 @@
-Product Recommendations Generated at 2025-06-11 14:06:03.727636
+Product Recommendations Generated at 2025-06-14 22:03:26.051346
 ================================================================================
 
 Recommendations for influential product 14949: Fodor's Australia 2000
@@ -8,35 +8,35 @@ Recommendations for influential product 14949: Fodor's Australia 2000
   Category: Music
   Rating: 0.0
   Network Connections: 128
-  Community: 161
+  Community: 34
 
 • Product ID: 16281 (Score: 8.7023)
   Title: The Conquerors (Phoenix Fiction Series)
   Category: Book
   Rating: 0.0
   Network Connections: 32
-  Community: 161
+  Community: 34
 
 • Product ID: 39265 (Score: 6.1368)
   Title: Kanji Starter
   Category: Book
   Rating: 0.0
   Network Connections: 101
-  Community: 161
+  Community: 34
 
 • Product ID: 153851 (Score: 5.7289)
   Title: Music Scene - The Best of 1969-70
   Category: DVD
   Rating: 3.5
   Network Connections: 25
-  Community: 161
+  Community: 34
 
 • Product ID: 215664 (Score: 5.3327)
   Title: Amelia Bedelia Goes Camping (I Can Read Book 2)
   Category: Book
   Rating: 4.5
   Network Connections: 6
-  Community: 161
+  Community: 34
 
 
 Recommendations for influential product 4429: Harley-Davidson Panheads, 1948-1965/M418
@@ -46,35 +46,35 @@ Recommendations for influential product 4429: Harley-Davidson Panheads, 1948-196
   Category: Book
   Rating: 5.0
   Network Connections: 48
-  Community: 154
+  Community: 31
 
-• Product ID: 3589 (Score: 9.8347)
+• Product ID: 3589 (Score: 14.7521)
   Title: I Was Aboard a Ufo
   Category: Book
   Rating: 3.0
   Network Connections: 137
-  Community: 96
+  Community: 31
 
-• Product ID: 6739 (Score: 6.5155)
-  Title: Independence Day (Single Disc Widescreen Edition)
-  Category: DVD
-  Rating: 3.5
-  Network Connections: 38
-  Community: 154
+• Product ID: 4931 (Score: 6.5155)
+  Title: The Model Engineer's Handbook
+  Category: Book
+  Rating: 0.0
+  Network Connections: 94
+  Community: 31
 
-• Product ID: 6932 (Score: 5.4954)
+• Product ID: 6932 (Score: 6.4019)
   Title: The Cheyenne Social Club
   Category: Video
   Rating: 4.5
   Network Connections: 49
-  Community: 154
+  Community: 31
 
-• Product ID: 26725 (Score: 5.2689)
+• Product ID: 26725 (Score: 5.4954)
   Title: Time After Time (Best)
   Category: Music
   Rating: 4.5
   Network Connections: 74
-  Community: 154
+  Community: 31
 
 
 Recommendations for influential product 33: Double Jeopardy (T*Witches, 6)
@@ -84,35 +84,35 @@ Recommendations for influential product 33: Double Jeopardy (T*Witches, 6)
   Category: Book
   Rating: 4.5
   Network Connections: 298
-  Community: 168
+  Community: 39
 
 • Product ID: 297 (Score: 13.5905)
   Title: The Rurouni Kenshin NB: 6
   Category: Book
   Rating: 3.0
   Network Connections: 275
-  Community: 16
+  Community: 14
 
 • Product ID: 518 (Score: 7.3915)
   Title: Jazz Steppin'
   Category: Music
   Rating: 4.0
   Network Connections: 87
-  Community: 16
+  Community: 14
 
 • Product ID: 848 (Score: 6.5245)
   Title: Waiting to Disappear
   Category: Book
   Rating: 5.0
   Network Connections: 50
-  Community: 16
+  Community: 14
 
 • Product ID: 1663 (Score: 5.4159)
   Title: Eat That Frog! 21 Great Ways to Stop Procrastinating and Get More Done in Less Time
   Category: Book
   Rating: 4.5
   Network Connections: 28
-  Community: 16
+  Community: 14
 
 
 Recommendations for influential product 10519: Pilgrim
@@ -122,35 +122,35 @@ Recommendations for influential product 10519: Pilgrim
   Category: Video
   Rating: 3.5
   Network Connections: 111
-  Community: 112
+  Community: 149
 
 • Product ID: 33399 (Score: 12.2273)
   Title: In The Year 2525 (millennium megamix)
   Category: Music
   Rating: 3.0
   Network Connections: 168
-  Community: 112
+  Community: 185
 
-• Product ID: 41743 (Score: 11.0715)
+• Product ID: 41743 (Score: 7.3810)
   Title: Holy Spirit: The Boundless Energy of God
   Category: Book
   Rating: 5.0
   Network Connections: 40
-  Community: 112
+  Community: 185
 
 • Product ID: 46088 (Score: 7.1893)
   Title: Mystic
   Category: Book
   Rating: 3.0
   Network Connections: 98
-  Community: 112
+  Community: 185
 
 • Product ID: 90103 (Score: 6.3808)
   Title: 1-2-3 Draw Knights Castles & Dragons: A Step by Step Guide (1-2-3 Draw)
   Category: Book
   Rating: 5.0
   Network Connections: 18
-  Community: 112
+  Community: 185
 
 
 Recommendations for influential product 12771: Jorge Negrete
@@ -160,35 +160,35 @@ Recommendations for influential product 12771: Jorge Negrete
   Category: Book
   Rating: 0.0
   Network Connections: 44
-  Community: 45
+  Community: 186
 
 • Product ID: 66038 (Score: 5.9026)
   Title: Bustin' Out
   Category: Music
   Rating: 4.5
   Network Connections: 52
-  Community: 45
+  Community: 186
 
 • Product ID: 71169 (Score: 5.2944)
   Title: Merriam-Webster's Medical Desk Dictionary, Revised Edition: Softcover Edition
   Category: Book
   Rating: 2.5
   Network Connections: 31
-  Community: 45
+  Community: 186
 
 • Product ID: 74731 (Score: 4.6411)
   Title: Got to Be Real
   Category: Music
   Rating: 4.0
   Network Connections: 20
-  Community: 45
+  Community: 186
 
 • Product ID: 76938 (Score: 4.5890)
   Title: The Best Test Preparation for the AP Biology (Test Preparations)
   Category: Book
   Rating: 2.0
   Network Connections: 94
-  Community: 59
+  Community: 69
 
 
 Recommendations for influential product 8: Losing Matt Shepard
@@ -198,35 +198,35 @@ Recommendations for influential product 8: Losing Matt Shepard
   Category: Book
   Rating: 5.0
   Network Connections: 357
-  Community: 16
+  Community: 14
 
-• Product ID: 303 (Score: 8.6408)
-  Title: Singin' Some Soul
-  Category: Music
-  Rating: 5.0
-  Network Connections: 162
-  Community: 17
-
-• Product ID: 445 (Score: 7.0688)
+• Product ID: 445 (Score: 8.6408)
   Title: An Affair of Sorcerers
   Category: Book
   Rating: 4.0
   Network Connections: 90
-  Community: 6
+  Community: 160
 
-• Product ID: 455 (Score: 6.7787)
+• Product ID: 455 (Score: 7.0688)
   Title: Midwinter Night's Dream
   Category: Music
   Rating: 5.0
   Network Connections: 38
-  Community: 17
+  Community: 152
 
-• Product ID: 481 (Score: 6.0234)
+• Product ID: 481 (Score: 6.7787)
   Title: A Major Case: A Novel by Pete Deer
   Category: Book
   Rating: 4.5
   Network Connections: 278
-  Community: 17
+  Community: 152
+
+• Product ID: 1282 (Score: 6.3054)
+  Title: CBS Salutes Lucy - The First 25 Years
+  Category: DVD
+  Rating: 4.5
+  Network Connections: 25
+  Community: 39
 
 
 Recommendations for influential product 481: A Major Case: A Novel by Pete Deer
@@ -236,35 +236,35 @@ Recommendations for influential product 481: A Major Case: A Novel by Pete Deer
   Category: Book
   Rating: 4.5
   Network Connections: 298
-  Community: 168
+  Community: 39
 
 • Product ID: 303 (Score: 11.0429)
   Title: Singin' Some Soul
   Category: Music
   Rating: 5.0
   Network Connections: 162
-  Community: 17
+  Community: 152
 
-• Product ID: 337 (Score: 8.6733)
+• Product ID: 337 (Score: 10.3444)
   Title: The Face of the River
   Category: Book
   Rating: 5.0
   Network Connections: 102
-  Community: 17
+  Community: 152
 
-• Product ID: 403 (Score: 7.1529)
+• Product ID: 403 (Score: 8.6733)
   Title: When Seconds Count
   Category: Music
   Rating: 0.0
   Network Connections: 72
-  Community: 17
+  Community: 152
 
-• Product ID: 837 (Score: 6.8963)
+• Product ID: 837 (Score: 7.1529)
   Title: Before You Remarry
   Category: Book
   Rating: 2.5
   Network Connections: 63
-  Community: 1
+  Community: 152
 
 
 Recommendations for influential product 297: The Rurouni Kenshin NB: 6
@@ -274,35 +274,35 @@ Recommendations for influential product 297: The Rurouni Kenshin NB: 6
   Category: Book
   Rating: 5.0
   Network Connections: 357
-  Community: 16
+  Community: 14
 
 • Product ID: 2353 (Score: 5.4500)
   Title: Committed
   Category: Music
   Rating: 5.0
   Network Connections: 182
-  Community: 154
+  Community: 31
 
 • Product ID: 2501 (Score: 4.3268)
   Title: The Narcissistic Family : Diagnosis and Treatment
   Category: Book
   Rating: 5.0
   Network Connections: 196
-  Community: 154
+  Community: 31
 
 • Product ID: 16678 (Score: 4.1028)
   Title: Episodes in Nineteenth and Twentieth Century Euclidean Geometry (New Mathematical Library)
   Category: Book
   Rating: 5.0
   Network Connections: 13
-  Community: 16
+  Community: 14
 
 • Product ID: 16679 (Score: 4.0669)
   Title: Double Your Income in Real Estate Sales
   Category: Book
   Rating: 3.5
   Network Connections: 17
-  Community: 16
+  Community: 14
 
 
 Recommendations for influential product 5737: Writing and Defending a Thesis or Dissertation in Psychology and Education
@@ -312,35 +312,35 @@ Recommendations for influential product 5737: Writing and Defending a Thesis or 
   Category: Book
   Rating: 4.5
   Network Connections: 405
-  Community: 154
+  Community: 31
 
 • Product ID: 9119 (Score: 6.5473)
   Title: Shades of Redd
   Category: Music
   Rating: 0.0
   Network Connections: 128
-  Community: 161
+  Community: 34
 
 • Product ID: 19446 (Score: 6.4347)
   Title: Time and the Art of Living
   Category: Book
   Rating: 5.0
   Network Connections: 30
-  Community: 112
+  Community: 149
 
 • Product ID: 19652 (Score: 5.5105)
   Title: Tom Petty and the Heartbreakers - High Grass Dogs (Live from the Fillmore)
   Category: DVD
   Rating: 4.0
   Network Connections: 32
-  Community: 112
+  Community: 149
 
 • Product ID: 30385 (Score: 4.5616)
   Title: Gustav Klimt: One Hundred Drawings
   Category: Book
   Rating: 4.5
   Network Connections: 53
-  Community: 112
+  Community: 149
 
 
 Recommendations for influential product 9106: A Touch Of Tranquility
@@ -350,34 +350,34 @@ Recommendations for influential product 9106: A Touch Of Tranquility
   Category: Book
   Rating: 3.0
   Network Connections: 137
-  Community: 96
+  Community: 31
 
 • Product ID: 4931 (Score: 7.3760)
   Title: The Model Engineer's Handbook
   Category: Book
   Rating: 0.0
   Network Connections: 94
-  Community: 96
+  Community: 31
 
 • Product ID: 9105 (Score: 6.4019)
   Title: Metamorphoses: A Play
   Category: Book
   Rating: 4.5
   Network Connections: 65
-  Community: 161
+  Community: 34
 
 • Product ID: 11593 (Score: 6.3760)
   Title: Death of a Peer (A Roderick Alleyn Mystery)
   Category: Book
   Rating: 4.5
   Network Connections: 41
-  Community: 161
+  Community: 34
 
 • Product ID: 21725 (Score: 4.9573)
   Title: Watercolor Fun and Free
   Category: Book
   Rating: 5.0
   Network Connections: 46
-  Community: 112
+  Community: 185
 
 

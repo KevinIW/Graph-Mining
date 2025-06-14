@@ -1,0 +1,5 @@
+Data preparation completed at 2025-06-14 22:00:48.672238
+Copurchase data: 1207337 rows
+Products data: 259167 rows
+Features in products data: id, title, group, salesrank, review_cnt, downloads, rating, outgoing_count, incoming_count, total_connections
+Missing values remaining: 0

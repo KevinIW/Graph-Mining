@@ -1,0 +1,305 @@
+Co-Purchase Network Analysis - Started at 2025-06-14 22:00:45.250425
+================================================================================
+
+================================================================================
+22:00:45 - DATA LOADING AND PREPARATION
+================================================================================
+
+Loading and preparing data...
+Loading data from copurchase.csv and products.csv...
+
+--- Data Exploration ---
+
+Copurchase Data:
+Shape: (1234870, 2)
+Data types:
+Source    int64
+Target    int64
+dtype: object
+Missing values:
+Source    0
+Target    0
+dtype: int64
+
+Products Data:
+Shape: (259167, 7)
+Data types:
+id              int64
+title          object
+group          object
+salesrank     float64
+review_cnt      int64
+downloads       int64
+rating        float64
+dtype: object
+Missing values:
+id            0
+title         0
+group         0
+salesrank     0
+review_cnt    0
+downloads     0
+rating        0
+dtype: int64
+
+--- Cleaning Copurchase Data ---
+
+--- Cleaning Products Data ---
+
+--- Data Validation ---
+Found 2900 invalid source products and 2943 invalid target products
+Removed 27533 rows with invalid product references
+
+--- Data Preparation Complete ---
+Copurchase data: 1207337 rows
+Products data: 259167 rows
+
+-- Copurchase Data Sample --
+  Source Target
+0      1      2
+1      1      4
+2      1      5
+3      1     15
+4      2     11
+
+-- Products Data Sample --
+   id                                              title  ... incoming_count  total_connections
+0   1            Patterns of Preaching: A Sermon Sampler  ...            0.0                4.0
+1   2                         Candlemas: Feast of Flames  ...            1.0                5.0
+2   3   World War II Allied Fighter Planes Trading Cards  ...            0.0                5.0
+3   4  Life Application Bible Commentary: 1 and 2 Tim...  ...           24.0               29.0
+4   5    Prayers That Avail Much for Business: Executive  ...           53.0               58.0
+
+[5 rows x 10 columns]
+
+Saved processing summary to data_prep_summary_20250614_220048.txt
+
+================================================================================
+22:00:48 - GRAPH CREATION
+================================================================================
+
+
+Creating co-purchasing graph...
+Graph created with 259102 nodes and 879700 edges
+
+================================================================================
+22:00:55 - GRAPH ANALYSIS
+================================================================================
+
+
+Analyzing graph structure...
+Clustering coefficient calculated on 1000 nodes using neighbor sampling
+
+Graph Metrics:
+- node_count: 259102
+- edge_count: 879700
+- density: 2.62074480257602e-05
+- avg_clustering: 0.1486934061434835
+- connected_components: >1
+- avg_degree: 6.790375990922493
+- max_degree: 416
+- Top 5 central nodes:
+  * Node 14949: 0.0016
+  * Node 4429: 0.0015
+  * Node 33: 0.0014
+  * Node 10519: 0.0013
+  * Node 12771: 0.0013
+
+================================================================================
+22:00:59 - COMMUNITY DETECTION
+================================================================================
+
+
+Detecting communities...
+Detecting communities...
+Using Louvain community detection algorithm...
+Successfully detected 203 communities using Louvain method
+Found 203 communities
+Found 203 communities
+Top 5 communities by size:
+- Community 14: 16848 nodes
+- Community 31: 11179 nodes
+- Community 86: 10538 nodes
+- Community 119: 10356 nodes
+- Community 132: 10282 nodes
+
+================================================================================
+22:01:50 - CO-PURCHASING PATTERNS
+================================================================================
+
+
+Most Frequent Co-Purchasing Patterns:
+        Source  Target  weight
+0            1      15       1
+804879  258340  257826       1
+804895  258344  258343       1
+804894  258344  258342       1
+804893  258343  258344       1
+804892  258343  258342       1
+804891  258343  251354       1
+804890  258342  258344       1
+804889  258342  258343       1
+804888  258342  255949       1
+
+================================================================================
+22:01:51 - INFLUENTIAL PRODUCTS
+================================================================================
+
+
+Identifying influential products...
+Finding influential products using degree centrality for better performance
+Top influential products:
+  product_id  centrality_score  degree_centrality                                     title
+0      14949          0.001606           0.001606                    Fodor's Australia 2000
+1       4429          0.001548           0.001548  Harley-Davidson Panheads, 1948-1965/M418
+2         33          0.001366           0.001366            Double Jeopardy (T*Witches, 6)
+3      10519          0.001281           0.001281                                   Pilgrim
+4      12771          0.001262           0.001262                             Jorge Negrete
+
+================================================================================
+22:01:51 - VISUALIZATION
+================================================================================
+
+
+Visualizing graph with community colors...
+Saving visualization to 'copurchase_graph.png'...
+Visualizing 100 nodes using neighbor sampling
+
+================================================================================
+22:02:01 - RECOMMENDATION EVALUATION
+================================================================================
+
+
+Evaluating recommendation system...
+Using neighbor sampling to select 50 test products
+
+Recommendation Evaluation Results:
+Basic Recommendations:
+- Precision: 0.9200
+- Recall: 0.6738
+- F1 Score: 0.7779
+- Coverage: 0.0007
+
+Community-Aware Recommendations:
+- Precision: 0.9200
+- Recall: 0.6738
+- F1 Score: 0.7779
+- Coverage: 0.0007
+
+Advanced Recommendations:
+- Precision: 0.7160
+- Recall: 0.6327
+- F1 Score: 0.6718
+- Coverage: 0.0008
+
+================================================================================
+22:03:26 - PRODUCT RECOMMENDATIONS
+================================================================================
+
+
+Generating product recommendations...
+Recommendations for influential product 14949: Fodor's Australia 2000
+            id                                            title  ... incoming_count  total_connections
+9033      9119                                   Shades of Redd  ...          123.0              128.0
+16129    16281          The Conquerors (Phoenix Fiction Series)  ...           27.0               32.0
+38816    39265                                    Kanji Starter  ...           96.0              101.0
+152189  153851                Music Scene - The Best of 1969-70  ...           20.0               25.0
+213233  215664  Amelia Bedelia Goes Camping (I Can Read Book 2)  ...            1.0                6.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 4429: Harley-Davidson Panheads, 1948-1965/M418
+          id                                              title  ... incoming_count  total_connections
+2484    2505  Create an Oasis With Greywater: Your Complete ...  ...           43.0               48.0
+3558    3589                                 I Was Aboard a Ufo  ...          132.0              137.0
+4882    4931                      The Model Engineer's Handbook  ...           89.0               94.0
+6862    6932                           The Cheyenne Social Club  ...           44.0               49.0
+26441  26725                             Time After Time (Best)  ...           69.0               74.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 33: Double Jeopardy (T*Witches, 6)
+        id                                              title  ... incoming_count  total_connections
+7        8                                Losing Matt Shepard  ...          293.0              298.0
+296    297                          The Rurouni Kenshin NB: 6  ...          275.0              275.0
+514    518                                      Jazz Steppin'  ...           82.0               87.0
+843    848                               Waiting to Disappear  ...           45.0               50.0
+1645  1663  Eat That Frog! 21 Great Ways to Stop Procrasti...  ...           23.0               28.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 10519: Pilgrim
+          id                                              title  ... incoming_count  total_connections
+10419  10517                                      Yu Yu Hakusho  ...          107.0              111.0
+33015  33399              In The Year 2525 (millennium megamix)  ...          164.0              168.0
+41271  41743           Holy Spirit: The Boundless Energy of God  ...           35.0               40.0
+45582  46088                                             Mystic  ...           93.0               98.0
+89153  90103  1-2-3 Draw Knights Castles & Dragons: A Step b...  ...           13.0               18.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 12771: Jorge Negrete
+          id                                              title  ... incoming_count  total_connections
+19845  20036  Los Angeles: City of Dreams (Urban Tapestry Se...  ...           39.0               44.0
+65333  66038                                        Bustin' Out  ...           47.0               52.0
+70413  71169  Merriam-Webster's Medical Desk Dictionary, Rev...  ...           26.0               31.0
+73944  74731                                     Got to Be Real  ...           15.0               20.0
+76125  76938  The Best Test Preparation for the AP Biology (...  ...           89.0               94.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 8: Losing Matt Shepard
+        id                                  title  group  ...  outgoing_count  incoming_count  total_connections
+32      33         Double Jeopardy (T*Witches, 6)   Book  ...             5.0           352.0              357.0
+441    445                 An Affair of Sorcerers   Book  ...             5.0            85.0               90.0
+451    455                Midwinter Night's Dream  Music  ...             5.0            33.0               38.0
+477    481     A Major Case: A Novel by Pete Deer   Book  ...             5.0           273.0              278.0
+1269  1282  CBS Salutes Lucy - The First 25 Years    DVD  ...             5.0            20.0               25.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 481: A Major Case: A Novel by Pete Deer
+      id                  title  group  salesrank  ...  rating  outgoing_count  incoming_count  total_connections
+7      8    Losing Matt Shepard   Book   277409.0  ...     4.5             5.0           293.0              298.0
+301  303      Singin' Some Soul  Music    72828.0  ...     5.0             5.0           157.0              162.0
+335  337  The Face of the River   Book  1892317.0  ...     5.0             5.0            97.0              102.0
+399  403     When Seconds Count  Music    38608.0  ...     0.0             5.0            67.0               72.0
+832  837     Before You Remarry   Book    49601.0  ...     2.5             5.0            58.0               63.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 297: The Rurouni Kenshin NB: 6
+          id                                              title  ... incoming_count  total_connections
+32        33                     Double Jeopardy (T*Witches, 6)  ...          352.0              357.0
+2332    2353                                          Committed  ...          177.0              182.0
+2480    2501  The Narcissistic Family : Diagnosis and Treatment  ...          191.0              196.0
+16514  16678  Episodes in Nineteenth and Twentieth Century E...  ...            8.0               13.0
+16515  16679            Double Your Income in Real Estate Sales  ...           12.0               17.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 5737: Writing and Defending a Thesis or Dissertation in Psychology and Education
+          id                                              title  ... incoming_count  total_connections
+4389    4429           Harley-Davidson Panheads, 1948-1965/M418  ...          400.0              405.0
+9033    9119                                     Shades of Redd  ...          123.0              128.0
+19256  19446                         Time and the Art of Living  ...           26.0               30.0
+19462  19652  Tom Petty and the Heartbreakers - High Grass D...  ...           27.0               32.0
+30037  30385                 Gustav Klimt: One Hundred Drawings  ...           48.0               53.0
+
+[5 rows x 10 columns]
+
+Recommendations for influential product 9106: A Touch Of Tranquility
+          id                                        title  ... incoming_count  total_connections
+3558    3589                           I Was Aboard a Ufo  ...          132.0              137.0
+4882    4931                The Model Engineer's Handbook  ...           89.0               94.0
+9019    9105                        Metamorphoses: A Play  ...           60.0               65.0
+11486  11593  Death of a Peer (A Roderick Alleyn Mystery)  ...           36.0               41.0
+21513  21725                      Watercolor Fun and Free  ...           41.0               46.0
+
+[5 rows x 10 columns]
+
+
+Recommendations saved to product_recommendations_20250614_220045.txt
+
+
+Execution completed in 0:02:56.570199

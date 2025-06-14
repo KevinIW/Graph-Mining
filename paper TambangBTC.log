@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.5)  12 JUN 2025 19:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.5)  14 JUN 2025 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,30 +731,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
 [2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-06.
+18.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Underfull \hbox (badness 1448) in paragraph at lines 220--221
+) [3]
+Underfull \hbox (badness 1448) in paragraph at lines 232--233
 []\OT1/ptm/m/n/10 To iden-tify nat-u-ral group-ings of prod-ucts in the co-
  []
 
-[3]
-<fig/copurchase_graph.png, id=147, 985.0401pt x 714.5094pt>
+<fig/copurchase_graph.png, id=144, 985.0401pt x 714.5094pt>
 File: fig/copurchase_graph.png Graphic file (type png)
 <use fig/copurchase_graph.png>
-Package pdftex.def Info: fig/copurchase_graph.png  used on input line 290.
+Package pdftex.def Info: fig/copurchase_graph.png  used on input line 270.
 (pdftex.def)             Requested size: 252.0pt x 182.79167pt.
-
-Underfull \vbox (badness 1735) has occurred while \output is active []
-
- [4 <./fig/copurchase_graph.png>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+[4 <./fig/copurchase_graph.png>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 []\OT1/ptm/b/n/10 Different com-mu-ni-ties ex-hib-ited dis-tinct co-
  []
 
 
-Underfull \hbox (badness 3826) in paragraph at lines 376--377
+Underfull \hbox (badness 3826) in paragraph at lines 357--358
 \OT1/ptm/b/n/10 purchasing pat-terns: \OT1/ptm/m/n/10 Book-dominated com-mu-ni-
 ties
  []
@@ -803,36 +799,31 @@ L3 programming layer <2024-02-20>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `"paper TambangBTC".out' has not changed.
 (rerunfilecheck)             Checksum: 3D6283DD9C3E1DB433AB888FCA881C66;4447.
  ) 
 Here is how much of TeX's memory you used:
- 13778 strings out of 474116
- 210366 string characters out of 5747718
- 1994190 words of memory out of 5000000
- 35846 multiletter control sequences out of 15000+600000
- 601073 words of font info for 124 fonts, out of 8000000 for 9000
+ 13480 strings out of 474116
+ 207843 string characters out of 5747718
+ 1955190 words of memory out of 5000000
+ 35579 multiletter control sequences out of 15000+600000
+ 599013 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1199b,1134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,1199b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
-fb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/tex
-live/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-
-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/u
-rw/times/utmbi8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.p
-fb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "paper TambangBTC.pdf" (6 pages, 589336 bytes).
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/t
+exlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2024/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on "paper TambangBTC.pdf" (6 pages, 645784 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 90 named destinations out of 1000 (max. 500000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
